@@ -1,0 +1,27 @@
+.header {
+    color: var(--header-text);
+    height: var(--header-height);
+    background-color: var(--header-bg);
+}
+
+.inner {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        display: none;
+    }
+
+    .inner {
+        justify-content: flex-end;
+    }
+}
